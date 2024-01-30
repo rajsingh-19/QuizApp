@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Quiz for test your knowledge" />
+    <meta name="author" content="Raj Singh" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./quiz.css" />
+  </head>
+  <body>
+    <header><div class="heading">Quiz App</div></header>
+    <main>
+      <div id="mainContainer">
+        <div class="insHeading">Instructions</div>
+        <div class="insContainer">
+          <ul>
+            <li>This is MCQ based quiz</li>
+            <li>You can't modify your answer after selecting an option</li>
+            <li>You can't go back in questions</li>
+            <li>Score card will be available after submit</li>
+            <li>Refresh the browser if there is an error</li>
+          </ul>
+        </div>
+        <div class="btnDiv"><button id="root">Let's Begin</button></div>
+      </div>
+      <div id="quizContainer">
+        <div class="quizHeading">
+          <div class="difficultyDiv"></div>
+          <div class="categoryDiv"></div>
+        </div>
+        <div class="quesDiv"></div>
+        <div class="optionsDiv"></div>
+        <div class="quizBtnDiv">
+          <button id="quitBtn"></button>
+          <button class="submitBtn"></button>
+          <button class="nextBtn"></button>
+        </div>
+      </div>
+    </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

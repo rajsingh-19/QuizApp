@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.quizContainer {
+    width: 100%;
+    height: 85vh;
+    background-color: #0a0a0a;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.hide {
+    display: none;
+}
+.quizHeading {
+    height: 10vh;
+    background-color: #101b2a;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.difficultyDiv {
+    font-size: 2rem;
+    color: #cbd5e1;
+    padding: 5px;
+    text-align: left;
+}
+.categoryDiv {
+    font-size: 2rem;
+    color: #cbd5e1;
+    padding: 5px;
+    text-align: right;
+}
+.quesDiv {
+    height: 15vh;
+    background-color: #cbd5e1;
+    font-size: 2rem;
+    padding: 10px;
+}
+.optionsDiv {
+    background-color: #a1a1aa;
+    height: 40vh;
+}
+.quizOptBtns {
+    text-align: center;
+    color: #020617;
+    border: 1px solid #0a0a0a;
+    font-size: 1.1rem;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2vh;
+}
+.quizBtnDiv {
+    height: 10vh;
+    background-color: #1f2937;
+    text-align: center;
+}
+.correct {
+    background-color: #22c55e;
+}
+.incorrect {
+    background-color: #b91c1c;
+}
+.submitBtn {
+    width: 100px;
+    background-color: #333;
+    color: white;
+}
+.scoreDiv {
+    height: 60vh;
+    background-color: #333;
+    color: white;
+    font-size: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;        align-items: center;
+}
+/*      --Adding responsiveness--    */
+
+@media (min-width: 280px) {
+    .difficultyDiv, .categoryDiv {
+        font-size: .8rem;
+        padding: 10px;
+    }
+    .quesDiv {
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 5px;
+    }
+    .quizOptBtns {
+        font-size: .8rem;
+    }
+    .quizBtnDiv {
+        padding: 5px 15px;
+        font-size: 1rem;
+    }
+    .submitBtn {
+        width: 70px;
+        font-size: 1rem;
+    }
+    .scoreDiv {
+        font-size: 2rem;
+    }
+}
+@media (min-width: 640px) {
+    .difficultyDiv, .categoryDiv {
+        font-size: 1.2rem;
+    }
+    .quesDiv {
+        font-size: 1.2rem;
+        font-weight: 800;
+    }
+    .quizOptBtns {
+        font-size: 1.1rem;
+    }
+    .scoreDiv {
+        font-size: 3rem;
+    }
+}
+@media (min-width: 768px) {
+    .difficultyDiv, .categoryDiv {
+        font-size: 1.5rem;
+    }
+    .quesDiv {
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+    .quizOptBtns {
+        font-size: 1.1rem;
+    }
+    .submitBtn {
+        font-size: 1.25rem;
+        width: 100px;
+    }
+    .scoreDiv {
+        font-size: 4rem;
+    }
+}
+@media (min-width : 1024px) {
+    .difficultyDiv, .categoryDiv {
+        font-size: 2rem;
+    } 
+    .quesDiv {
+        font-size: 2rem;
+    }
+    .submitBtn {
+        font-size: 1.5rem;
+        width: 100px;
+    }
+    .scoreDiv {
+        font-size: 5rem;
+    }
+}
